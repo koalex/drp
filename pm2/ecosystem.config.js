@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     apps : [{
         name: 'DRP',
-        script: path.join(__dirname, '../index.js'),
+        script: path.join(__dirname, '../www/server/bin/server.js'),
         exec_mode: 'cluster',
         max_memory_restart: '2G',
         pid_file: path.join(__dirname, 'server.pid'),
@@ -34,7 +34,7 @@ module.exports = {
             ref: 'origin/master',
             repo: 'https://github.com/koalex/drp.git',
             path: '/home/drp/www/drp',
-            'post-deploy': 'npm install && pm2 startOrReload pm2/ecosystem.config.js'
+            'post-deploy': 'npm install && npm run bootstrap && npm run build:frontend && pm2 startOrReload pm2/ecosystem.config.js'
         }
     }
 };
