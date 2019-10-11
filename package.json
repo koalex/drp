@@ -1,0 +1,54 @@
+{
+  "name": "drp",
+  "version": "1.0.0",
+  "description": "Web application that allows its users to find solutions to PC problems.",
+  "private": true,
+  "scripts": {
+    "deploy:setup": "pm2 deploy pm2/ecosystem.config.js production setup",
+    "deploy": "pm2 deploy pm2/ecosystem.config.js staging",
+    "pm2:kill": "pm2 kill",
+    "pm2:monit": "pm2 monit",
+    "pm2:list": "pm2 list",
+    "bootstrap": "lerna bootstrap --ignore-prepublish --force-local --hoist=*",
+    "test": "lerna run test --stream --concurrency 1",
+    "audit": "lerna run audit --stream",
+    "check-updates": "lerna run check-updates --stream",
+    "check-updates:upgrade": "lerna run check-updates:upgrade --stream",
+    "start:backend": "cp ./.env www/server/ && lerna run start --scope server --stream",
+    "dev:backend": "cp ./.env www/server/ && lerna run dev --scope server --stream",
+    "dev:frontend": "cp ./.env client/react-front && lerna run dev --scope react-front --stream",
+    "build:frontend": "cp ./.env client/react-front && lerna run build --scope react-front --stream"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koalex/drp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koalex/drp/issues"
+  },
+  "contributors": [
+    {
+      "name": "Konstantin Aleksandrov",
+      "email": "alexandrovkm@gmail.com",
+      "url": "https://github.com/koalex"
+    }
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/koalex/drp#readme",
+  "engines": {
+    "node": ">=10.10.0",
+    "npm": ">=6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "husky": "^2.4.1",
+    "lerna": "^3.14.1"
+  },
+  "dependencies": {}
+}

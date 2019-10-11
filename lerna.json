@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "www/*",
+    "client/*"
+  ],
+  "npmClient": "npm",
+  "version": "1.0.0"
+}

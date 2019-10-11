@@ -1,0 +1,91 @@
+@charset "UTF-8"
+
+:local(.addSolutionForm)
+  display flex
+  flex-direction column
+
+:local(.addSolutionFormItem)
+  margin-top 40px !important
+
+:local(.categoryFieldset)
+  display flex !important
+
+:local(.categoryItems)
+  display flex
+  align-items center
+  justify-content space-around
+
+:local(.categoryLegend)
+  margin-bottom 30px
+  text-align center
+
+:local(.categoryLegend:first-letter)
+  text-transform uppercase
+
+:local(.categoryDropdown)
+  min-width 194px
+
+:local(.ssLabelContainer)
+  display flex
+  align-items center
+  margin-bottom 20px
+  justify-content center
+
+:local(.symptomSolutionItem)
+  display flex
+  align-items center
+  margin-bottom 40px
+
+:local(.symptomSolutionItem:last-child)
+  margin-bottom 10px
+
+:local(.addSolutionBtn), :local(.removeSolutionBtn), :local(.categorySwitcher)
+  position relative
+  bottom 12px
+
+:local(.symptomSolutionItems)
+  display flex
+  flex-direction column
+
+:local(.symptomSolutionTextFields)
+  flex-grow 1
+
+:local(.symptomSolutionTextFields > *:first-child)
+  margin-bottom 20px
+
+:local(.symptomFieldContainer)
+  display flex
+  align-items center
+  justify-content center
+
+:local(.symptomFieldContainer > span)
+  display inline-block
+  min-width 44px
+  min-height 44px
+
+:local(.keywordsContainer)
+  margin-bottom 20px
+
+:local(.solutionFieldContainer)
+  display flex
+  align-items center
+  margin-bottom 30px
+
+:local(.solutionFieldContainer:last-child)
+  margin-bottom 0
+
+:local(.addSSBtn)
+  align-self center
+
+:local(.editModeBtnsContainer)
+  display flex
+  align-items center
+  justify-content space-between
+
+:local(.submitBtnContainer)
+  position relative
+
+:local(.prelaoder)
+  position absolute
+  top calc(50% - 20px)
+  left calc(50% - 20px)

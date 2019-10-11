@@ -1,0 +1,93 @@
+{
+  env: {
+    development: {
+      presets: [
+        ['@babel/env', {
+            targets: {
+//              esmodules: true,
+              browsers: ['last 2 versions']
+          },
+          useBuiltIns: false
+        }],
+        ['@babel/preset-react', {development: true, useBuiltIns: false}]
+      ],
+      plugins: [
+        ['import', {
+          'libraryName': '@material-ui/core',
+          'libraryDirectory': ''  // default: lib
+//          "camel2DashComponentName": false,  // default: true
+        }],
+//        https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import
+        '@babel/plugin-syntax-dynamic-import',
+        ['@babel/plugin-transform-runtime', {
+          corejs: false,
+          helpers: false,
+          regenerator: true,
+          useESModules: true // https://babeljs.io/docs/en/babel-plugin-transform-runtime TODO
+        }],
+        '@babel/plugin-proposal-object-rest-spread',
+        '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-proposal-optional-chaining',
+        ['@babel/plugin-proposal-decorators', {
+          decoratorsBeforeExport: true,
+          legacy: false
+        }],
+        ['@babel/plugin-proposal-class-properties', {loose: false}],
+//        'universal-import',
+        ['react-intl', {
+          'extractSourceLocation': true,
+          'messagesDir': './src/modules/i18n/messages'
+        }],
+        'lodash',
+        'react-hot-loader/babel'
+      ]
+    },
+    production: {
+      presets: [
+        ['@babel/env', {
+          targets: {
+            esmodules: true,
+            browsers: ['last 2 versions']
+          },
+          useBuiltIns: false
+        }],
+        ['@babel/preset-react', {development: false, useBuiltIns: false}]
+      ],
+      plugins: [
+        ['import', {
+          'libraryName': '@material-ui/core',
+          'libraryDirectory': ''  // default: lib
+          //          "camel2DashComponentName": false,  // default: true
+        }],
+        '@babel/plugin-syntax-dynamic-import',
+        ['transform-react-remove-prop-types', {
+          mode: 'remove',
+          removeImport: true,
+          ignoreFilenames: ['node_modules'],
+          additionalLibraries: ['react-immutable-proptypes']
+        }],
+        // https://babeljs.io/docs/en/babel-plugin-syntax-dynamic-import
+        ['@babel/plugin-transform-runtime', {
+          corejs: false,
+          helpers: false,
+          regenerator: true,
+          useESModules: true // https://babeljs.io/docs/en/babel-plugin-transform-runtime TODO
+        }],
+        '@babel/plugin-proposal-object-rest-spread',
+        '@babel/plugin-proposal-export-default-from',
+        '@babel/plugin-proposal-optional-chaining',
+        ['@babel/plugin-proposal-decorators', {
+          decoratorsBeforeExport: true,
+          legacy: false
+        }],
+        ['@babel/plugin-proposal-class-properties', {loose: false}],
+        // 'universal-import',
+        ['react-intl', {
+          'extractSourceLocation': true,
+          'messagesDir': './src/modules/i18n/messages'
+        }],
+        'lodash'
+      ]
+    }
+  }
+}

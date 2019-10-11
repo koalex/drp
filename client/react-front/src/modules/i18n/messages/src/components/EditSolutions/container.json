@@ -1,0 +1,15 @@
+[
+  {
+    "id": "helmet.createSolutions",
+    "defaultMessage": "Создать решения",
+    "file": "src/components/EditSolutions/container.js",
+    "start": {
+      "line": 19,
+      "column": 12
+    },
+    "end": {
+      "line": 22,
+      "column": 5
+    }
+  }
+]

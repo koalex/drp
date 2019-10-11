@@ -1,0 +1,128 @@
+[
+  {
+    "id": "frontpage.ThemeSwitcher.ColorTheme",
+    "description": "Лэйбл",
+    "defaultMessage": "Цветовая тема:",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 19,
+      "column": 13
+    },
+    "end": {
+      "line": 23,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.ColorThemeWOColon",
+    "description": "Лэйбл без двоеточия",
+    "defaultMessage": "Цветовая тема",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 24,
+      "column": 20
+    },
+    "end": {
+      "line": 28,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.ThemeSelectDescription",
+    "description": "Краткая информация о применении цветовой схемы при выборе",
+    "defaultMessage": "Выбранная цветовая схема будет сохранена только в этом браузере (приложении)",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 29,
+      "column": 25
+    },
+    "end": {
+      "line": 33,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialDark",
+    "description": "Название тёмной темы Material Dark",
+    "defaultMessage": "Тёмная тема",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 34,
+      "column": 15
+    },
+    "end": {
+      "line": 38,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialDarkShort",
+    "description": "Название тёмной темы Material Dark (кратко)",
+    "defaultMessage": "Тёмная",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 39,
+      "column": 20
+    },
+    "end": {
+      "line": 43,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialLight",
+    "description": "Название тёмной темы MaterialLight",
+    "defaultMessage": "Светлая тема",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 44,
+      "column": 16
+    },
+    "end": {
+      "line": 48,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialLightShort",
+    "description": "Название тёмной темы MaterialLight (кратко)",
+    "defaultMessage": "Светлая",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 49,
+      "column": 21
+    },
+    "end": {
+      "line": 53,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialLight2",
+    "description": "Название тёмной темы MaterialLight 2",
+    "defaultMessage": "Светлая тема 2",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 54,
+      "column": 17
+    },
+    "end": {
+      "line": 58,
+      "column": 2
+    }
+  },
+  {
+    "id": "frontpage.ThemeSwitcher.MaterialLightShort2",
+    "description": "Название тёмной темы MaterialLight 2 (кратко)",
+    "defaultMessage": "Светлая 2",
+    "file": "src/components/ThemeSwitcher/index.js",
+    "start": {
+      "line": 59,
+      "column": 22
+    },
+    "end": {
+      "line": 63,
+      "column": 2
+    }
+  }
+]

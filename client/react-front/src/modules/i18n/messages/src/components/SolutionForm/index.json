@@ -1,0 +1,236 @@
+[
+  {
+    "id": "SolutionFormCatLabel",
+    "defaultMessage": "Категория",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 54,
+      "column": 23
+    },
+    "end": {
+      "line": 57,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormRequiredErr",
+    "defaultMessage": "Не заполнено",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 58,
+      "column": 26
+    },
+    "end": {
+      "line": 61,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormCatNewLabel",
+    "defaultMessage": "Создать",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 62,
+      "column": 26
+    },
+    "end": {
+      "line": 65,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormCatNewPlaceholder",
+    "defaultMessage": "Перифирия",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 66,
+      "column": 32
+    },
+    "end": {
+      "line": 69,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormCatExist",
+    "defaultMessage": "Выбрать",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 70,
+      "column": 23
+    },
+    "end": {
+      "line": 73,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSSLabel",
+    "defaultMessage": "Проблемы и решения",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 74,
+      "column": 22
+    },
+    "end": {
+      "line": 77,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSymptomLabel",
+    "defaultMessage": "Проблема",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 78,
+      "column": 27
+    },
+    "end": {
+      "line": 81,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSymptomPlaceholder",
+    "defaultMessage": "Ноутбук не включается",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 82,
+      "column": 33
+    },
+    "end": {
+      "line": 85,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSolutionLabel",
+    "defaultMessage": "Возможное решение",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 86,
+      "column": 28
+    },
+    "end": {
+      "line": 89,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSolutionPlaceholder",
+    "defaultMessage": "Проверьте электропитание",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 90,
+      "column": 34
+    },
+    "end": {
+      "line": 93,
+      "column": 2
+    }
+  },
+  {
+    "id": "AddSolutionTooltip",
+    "defaultMessage": "Добавить ещё возможное решение для этого симптома",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 94,
+      "column": 21
+    },
+    "end": {
+      "line": 97,
+      "column": 2
+    }
+  },
+  {
+    "id": "RemoveSolutionTooltip",
+    "defaultMessage": "Удалить это решение",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 98,
+      "column": 24
+    },
+    "end": {
+      "line": 101,
+      "column": 2
+    }
+  },
+  {
+    "id": "AddSSTooltip",
+    "defaultMessage": "Добавить проблему",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 102,
+      "column": 15
+    },
+    "end": {
+      "line": 105,
+      "column": 2
+    }
+  },
+  {
+    "id": "DeleteSSTooltip",
+    "defaultMessage": "Удалить проблему и решения",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 106,
+      "column": 18
+    },
+    "end": {
+      "line": 109,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSubmitBtnAdd",
+    "defaultMessage": "Создать",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 110,
+      "column": 27
+    },
+    "end": {
+      "line": 113,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSubmitBtnEdit",
+    "defaultMessage": "Редактировать",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 114,
+      "column": 28
+    },
+    "end": {
+      "line": 117,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSubmitBtnSave",
+    "defaultMessage": "Сохранить",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 118,
+      "column": 28
+    },
+    "end": {
+      "line": 121,
+      "column": 2
+    }
+  },
+  {
+    "id": "SolutionFormSubmitBtnCancel",
+    "defaultMessage": "Отмена",
+    "file": "src/components/SolutionForm/index.js",
+    "start": {
+      "line": 122,
+      "column": 30
+    },
+    "end": {
+      "line": 125,
+      "column": 2
+    }
+  }
+]

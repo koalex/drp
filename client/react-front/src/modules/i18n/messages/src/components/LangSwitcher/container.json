@@ -1,0 +1,30 @@
+[
+  {
+    "id": "i18n.LangSwitcher.Lang",
+    "description": "Лэйбл",
+    "defaultMessage": "Язык:",
+    "file": "src/components/LangSwitcher/container.js",
+    "start": {
+      "line": 30,
+      "column": 10
+    },
+    "end": {
+      "line": 34,
+      "column": 5
+    }
+  },
+  {
+    "id": "i18n.LangSwitcher.LangSelectDescription",
+    "description": "Краткая информация о выборе языка",
+    "defaultMessage": "Выберите ваш язык",
+    "file": "src/components/LangSwitcher/container.js",
+    "start": {
+      "line": 35,
+      "column": 27
+    },
+    "end": {
+      "line": 39,
+      "column": 5
+    }
+  }
+]
