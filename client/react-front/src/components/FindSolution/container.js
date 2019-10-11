@@ -137,7 +137,7 @@ function FindSolution ({intl: { formatMessage }, ...props}) {
 							           placeholder={formatMessage(messages.SearchPlaceholder)}
 							           helperText={symptomFieldHasError ? (
 								           symptom.trim().length < 4 ? formatMessage(messages.SearchErr2) : formatMessage(messages.SearchErr2)
-							           ) : ''}
+							           ) : ' '}
 							           margin="normal"
 							           name="symptom"
 							           defaultValue={symptom}
