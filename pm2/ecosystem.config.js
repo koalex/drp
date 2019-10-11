@@ -34,7 +34,7 @@ module.exports = {
             ref: 'origin/master',
             repo: 'https://github.com/koalex/drp.git',
             path: '/home/drp/www/drp',
-            'post-deploy': 'npm install && npm run bootstrap && npm run build:frontend && pm2 startOrReload pm2/ecosystem.config.js'
+            'post-deploy': 'cp /home/drp/www/.env /home/drp/www/drp/current/ && npm install && npm run bootstrap && npm run build:frontend && pm2 startOrReload pm2/ecosystem.config.js'
         }
     }
 };
