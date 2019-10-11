@@ -170,7 +170,7 @@ module.exports = merge(common, {
 							limit: 4096
 						}
 					},
-					{
+					/*{
 						loader: 'image-webpack-loader',
 						options: {
 							mozjpeg: {
@@ -191,7 +191,7 @@ module.exports = merge(common, {
 								quality: 75
 							}
 						}
-					}
+					}*/
 				]
 			}
 		]
