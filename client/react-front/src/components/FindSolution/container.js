@@ -1,16 +1,16 @@
-import CSS       from './index.styl';
+import CSS              from './index.styl';
 import React, {
 	useState,
 	useEffect
-}                   from 'react';
-import PropTypes    from 'prop-types';
-import { connect }  from 'react-redux';
-import { Helmet }   from 'react-helmet';
+}                       from 'react';
+import PropTypes        from 'prop-types';
+import { connect }      from 'react-redux';
+import { Helmet }       from 'react-helmet';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl  from '@material-ui/core/FormControl';
-import FormLabel    from '@material-ui/core/FormLabel';
-import TextField    from '@material-ui/core/TextField';
-import Radio        from '@material-ui/core/Radio';
+import FormControl      from '@material-ui/core/FormControl';
+import FormLabel        from '@material-ui/core/FormLabel';
+import TextField        from '@material-ui/core/TextField';
+import Radio            from '@material-ui/core/Radio';
 import RadioGroup   from '@material-ui/core/RadioGroup';
 import Button       from '@material-ui/core/Button';
 import List         from '@material-ui/core/List';
@@ -18,6 +18,8 @@ import ListItem     from '@material-ui/core/ListItem';
 import Divider      from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography   from '@material-ui/core/Typography';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 import {
 	injectIntl,
 	defineMessages
@@ -127,8 +129,10 @@ function FindSolution ({intl: { formatMessage }, ...props}) {
 				      encType="application/json"
 				      onSubmit={onSubmit}
 				>
+
 					<div className={CSS.formGroup}>
 						<div className={CSS.searhGroup}>
+							{isLoading? <CircularProgress className={CSS.prelaoder} size={40} /> : null}
 							<TextField className={CSS.searchField}
 							           autoFocus
 							           disabled={disabled || isLoading}
