@@ -63,4 +63,4 @@ export default connect(state => ({
 }), {
     loadSymptomsAndSolutions,
     updateSymptomsAndSolutions
-})(EditSolutions);
+})(injectIntl(EditSolutions));
