@@ -10,8 +10,6 @@ const defaultHeaders = {
 	// Host: 'https://localhost:8080',
 };
 
-
-
 export default store => next => async action => {
 	const { CALL_API, type, ...rest } = action;
 
@@ -37,7 +35,6 @@ export default store => next => async action => {
 	} else if (CALL_API.headers && 'object' !== typeof CALL_API.headers) {
 		console.warn('API middleware: headers must be an object, but got ', (typeof CALL_API.headers) + '.', 'Skip headers');
 	}
-
 
 	if (isGET()) {
 		delete headers['Content-Type'];
@@ -68,10 +65,6 @@ export default store => next => async action => {
 			request.body = CALL_API.body;
 		}
 	}
-
-    if (__DEV__) {
-        CALL_API.endpoint = CALL_API.endpoint;
-    }
 
 	const locale = getLocale(); // TODO: locale from state
 
@@ -115,7 +108,6 @@ export default store => next => async action => {
 		}
 		return;
 	}
-
 
 	if (Number(response.status) === 204) {
         if (Array.isArray(CALL_API.success_type)) {
