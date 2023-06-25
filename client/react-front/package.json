@@ -53,7 +53,7 @@
         "redux": "^4.0.4",
         "redux-async-connect": "^1.0.0-rc4",
         "reselect": "^4.0.0",
-        "semver": "^6.3.0",
+        "semver": "^7.5.2",
         "url-search-params": "^1.1.0",
         "uuid": "^3.3.3"
     },
